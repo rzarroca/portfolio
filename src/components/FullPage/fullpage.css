@@ -1,0 +1,26 @@
+.fullpage {
+    width: 100vw;
+    height: 100vh;
+    
+    display: grid;
+    grid-template-rows: minmax(20px, 0.5fr) 4fr minmax(25px, 0.5fr);
+    grid-template-columns: clamp(10px, 10vw, 900px) 1fr clamp(10px, 10vw, 900px);
+
+}
+
+.container-clear{
+    background-color: var(--color-clear);
+}
+.container-primary{
+    background-color: var(--color-primary);
+}
+.container-secondary{
+    background-color: var(--color-secondary);
+}
+.container-highlight{
+    background-color: var(--color-highlight);
+}
+.container-dark{
+    background-color: var(--color-dark);
+}
+

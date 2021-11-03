@@ -1,0 +1,14 @@
+.fullpage-content {
+    grid-area: 2/2/3/3;
+
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    justify-items: stretch;
+    align-items: stretch;
+    gap: 5vw;
+}
+
+.summary {
+    display: grid;
+    
+}
