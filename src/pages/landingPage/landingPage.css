@@ -7,8 +7,6 @@
     display: grid;
     grid-template-rows: minmax(0, 2fr) minmax(0, 1fr);
 
-    justify-content: stretch;
-    align-items: stretch;
     gap: 5vw;
 }
 
@@ -19,19 +17,34 @@
         "text  img"
         "text2  text2";
   grid-template-rows: minmax(0, 2fr) minmax(0, 2fr) minmax(0, 1fr);
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr)
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1vw;
 }
+
+@media (min-width: 600px) {
+    .summary {
+        grid-template-areas: 
+            "head img"
+            "text  img"
+            "text2  text2";
+    }
+  }
 
 .summary header {
     grid-area: head;
 }
 
-.summary figure {
+.summary img {
+    justify-self: center;
+    align-self: center;
+
     grid-area: img;
+    box-shadow: 20px 0px 0px 8px var(--color-primary)
 }
 
 .p1 {
     grid-area: text;
+    align-self: center;
 }
 
 .p2 {
