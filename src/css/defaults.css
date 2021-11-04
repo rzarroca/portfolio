@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: content-box;
+    color: var(--color-dark);
 }
 
 code {
@@ -21,8 +22,11 @@ h1 {
 
 h2 {
     font-size: var(--typography-large);
+
 }
 
 p {
     font-size: var(--typography-standard);
+    text-align: justify;
+
 }

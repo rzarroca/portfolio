@@ -5,7 +5,7 @@
     overflow: auto;
 
     display: grid;
-    grid-template-rows: minmax(0, 2fr) minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1.75fr) minmax(0, 1fr);
 
     gap: 5vw;
 }
@@ -16,12 +16,12 @@
         "head head"
         "text  img"
         "text2  text2";
-  grid-template-rows: minmax(0, 2fr) minmax(0, 2fr) minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr) minmax(0, 2fr) minmax(0, 1fr);
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 1vw;
+  gap: 5vw;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 760px) {
     .summary {
         grid-template-areas: 
             "head img"
@@ -30,9 +30,12 @@
     }
   }
 
+
 .summary header {
     grid-area: head;
 }
+
+
 
 .summary img {
     justify-self: center;
@@ -41,6 +44,13 @@
     grid-area: img;
     box-shadow: 20px 0px 0px 8px var(--color-primary)
 }
+
+@media (min-width: 760px) {
+    .summary img {
+        align-self: flex-start;
+    }
+  }
+
 
 .p1 {
     grid-area: text;
