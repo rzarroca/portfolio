@@ -1,33 +1,10 @@
+@import './css/variables.css';
+@import './css/defaults.css';
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: content-box;
-}
-
-img {
-  max-width: 100%;
-  max-height: 100%; 
-  object-fit: contain;
-}
-
-:root{
-  --color-clear: rgba(232, 232, 232, 1);
-  --color-highlight: rgba(232, 192, 132, 1);
-  --color-primary: rgba(48, 71, 94, 1);
-  --color-secondary: rgba(25, 160, 126, 1);
-  --color-dark: rgba(34, 40, 49, 1);
-  
 }

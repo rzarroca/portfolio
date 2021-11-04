@@ -1,0 +1,78 @@
+:root{
+    --color-clear: rgba(232, 232, 232, 1);
+    --color-highlight: rgba(232, 192, 132, 1);
+    --color-primary: rgba(48, 71, 94, 1);
+    --color-secondary: rgba(25, 160, 126, 1);
+    --color-dark: rgba(34, 40, 49, 1);
+
+}
+
+/* @link https://utopia.fyi/type/calculator?c=320,14,1.2,1140,20,1.333,4,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+:root {
+    --fluid-min-width: 320;
+    --fluid-max-width: 1140;
+  
+    --fluid-screen: 100vw;
+    --fluid-bp: calc(
+      (var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) /
+        (var(--fluid-max-width) - var(--fluid-min-width))
+    );
+  }
+  
+  @media screen and (min-width: 1140px) {
+    :root {
+      --fluid-screen: calc(var(--fluid-max-width) * 1px);
+    }
+  }
+  
+  :root {
+    --f--1-min: 11.67;
+    --f--1-max: 15.00;
+    --typography-step--1: calc(
+      ((var(--f--1-min) / 16) * 1rem) + (var(--f--1-max) - var(--f--1-min)) *
+        var(--fluid-bp)
+    );
+  
+    --f-0-min: 14.00;
+    --f-0-max: 20.00;
+    --typography-step-0: calc(
+      ((var(--f-0-min) / 16) * 1rem) + (var(--f-0-max) - var(--f-0-min)) *
+        var(--fluid-bp)
+    );
+  
+    --f-1-min: 16.80;
+    --f-1-max: 26.66;
+    --typography-step-1: calc(
+      ((var(--f-1-min) / 16) * 1rem) + (var(--f-1-max) - var(--f-1-min)) *
+        var(--fluid-bp)
+    );
+  
+    --f-2-min: 20.16;
+    --f-2-max: 35.54;
+    --typography-step-2: calc(
+      ((var(--f-2-min) / 16) * 1rem) + (var(--f-2-max) - var(--f-2-min)) *
+        var(--fluid-bp)
+    );
+  
+    --f-3-min: 24.19;
+    --f-3-max: 47.37;
+    --typography-step-3: calc(
+      ((var(--f-3-min) / 16) * 1rem) + (var(--f-3-max) - var(--f-3-min)) *
+        var(--fluid-bp)
+    );
+  
+    --f-4-min: 29.03;
+    --f-4-max: 63.15;
+    --typography-step-4: calc(
+      ((var(--f-4-min) / 16) * 1rem) + (var(--f-4-max) - var(--f-4-min)) *
+        var(--fluid-bp)
+    );
+  }
+
+  :root {
+    --typography-standard: var(--typography-step-0);
+    --typography-small: var(--typography-step--1);
+    --typography-large: var(--typography-step-2);
+    --typography-xlarge: var(--typography-step-4);
+  }
+  

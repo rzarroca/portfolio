@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+}
+    
+img {
+    max-width: 100%;
+    max-height: 100%; 
+    object-fit: contain;
+}
+
+h1 {
+    font-size: var(--typography-xlarge);
+}
+
+h2 {
+    font-size: var(--typography-large);
+}
+
+p {
+    font-size: var(--typography-standard);
+}
