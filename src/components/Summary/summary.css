@@ -1,0 +1,46 @@
+.summary {
+    display: grid;
+    grid-template-areas: 
+        "head head"
+        "text  img"
+        "text2  text2";
+  grid-template-rows: minmax(0, 1fr) minmax(0, 2fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 5vw;
+}
+
+@media (min-width: 760px) {
+    .summary {
+        grid-template-areas: 
+            "head img"
+            "text  img"
+            "text2  text2";
+    }
+  }
+
+.summary header {
+    grid-area: head;
+}
+
+.summary img {
+    justify-self: center;
+    align-self: center;
+
+    grid-area: img;
+    box-shadow: 20px 0px 0px 8px var(--color-primary)
+}
+
+@media (min-width: 760px) {
+    .summary img {
+        align-self: flex-start;
+    }
+  }
+
+.p1 {
+    grid-area: text;
+    align-self: center;
+}
+
+.p2 {
+    grid-area: text2;
+}
