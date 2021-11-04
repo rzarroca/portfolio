@@ -10,6 +10,9 @@ export function LadingPage () {
         <article>
           <header>
             <h1>Please, have a look around!</h1>
+            <nav>
+              <ul />
+            </nav>
           </header>
         </article>
       </div>
