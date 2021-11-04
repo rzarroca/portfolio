@@ -17,6 +17,12 @@ code {
   box-sizing: content-box;
 }
 
+img {
+  width: 100%;
+  height: 100%; 
+  object-fit: contain;
+}
+
 :root{
   --color-clear: rgba(232, 232, 232, 1);
   --color-highlight: rgba(232, 192, 132, 1);
