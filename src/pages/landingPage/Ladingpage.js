@@ -12,9 +12,7 @@ export function LadingPage () {
             <h1>Hello World!</h1>
             <h2>I'm Ricardo Zarroca, <bold>fullstack web developer</bold></h2>
           </header>
-          <figure>
-            <img src={avatar} alt='avatar image' />
-          </figure>
+          <img src={avatar} alt='avatar image' />
           <p className='p1'>
             Every time the human being has had to solve a need, he has found a solution <bold>based on technology.</bold>
           </p>
