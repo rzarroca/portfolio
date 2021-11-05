@@ -18,7 +18,7 @@ describe('<Link>', () => {
     component.rerender(
       <Link />
     )
-    component.getByText('Place Link')
+    component.getByText('New Link')
   })
 
   test('renders children', () => {
@@ -29,7 +29,7 @@ describe('<Link>', () => {
     component.rerender(
       <Link />
     )
-    const anchor = component.getByText('Place Link')
+    const anchor = component.getByText('New Link')
     expect(anchor).toHaveAttribute('href', '#')
   })
 })
