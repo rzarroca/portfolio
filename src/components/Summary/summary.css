@@ -36,11 +36,11 @@
     }
   }
 
-.p1 {
+.summary p1 {
     grid-area: text;
     align-self: center;
 }
 
-.p2 {
+.summary p2 {
     grid-area: text2;
 }
