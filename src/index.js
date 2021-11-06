@@ -1,11 +1,15 @@
+import './index.css'
 import { StrictMode } from 'react'
 import ReactDOM from 'react-dom'
 import { App } from './App'
-import './index.css'
+import { ThemeProvider } from '@mui/material/styles'
+import { theme } from 'css/theme'
 
 ReactDOM.render(
   <StrictMode>
-    <App />
+    <ThemeProvider theme={theme}>
+      <App />
+    </ThemeProvider>
   </StrictMode>,
   document.getElementById('root')
 )
