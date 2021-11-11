@@ -29,33 +29,3 @@
 .flexBox > * {
     flex: 1 1 450px;
 }
-
-.stack {
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 0.5vh;
-}
-
-.stack-description {
-    font-size: var(--typography-large);
-}
-
-.stack-list {
-    display: flex;
-    flex-flow: row wrap;
-    row-gap: 2vh;
-    column-gap: 5vw;
-
-    justify-content: center;
-    align-items: center;
-}
-
-
-.stack-list > li {
-    list-style-type: none;
-    max-width: 80px;
-}
-
-.stack-list > li > * {
-    max-width: 100%;
-}

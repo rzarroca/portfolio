@@ -1,5 +1,6 @@
 import './about.css'
 import { FullPage } from 'components/FullPage/FullPage'
+import { StackSection } from 'components/StackSection/StackSection'
 
 import { ReactComponent as Mysql } from 'assets/svg/mysql.svg'
 import { ReactComponent as Express } from 'assets/svg/express.svg'
@@ -19,15 +20,12 @@ export function About () {
         <article className='card'>
           <h1>Stacks</h1>
           <div className='flexBox'>
-            <section className='stack'>
-              <h2 className='stack-description'>Main</h2>
-              <ul className='stack-list'>
-                <li><Mysql /></li>
-                <li><Express /></li>
-                <li><ReactJs /></li>
-                <li><Node /></li>
-              </ul>
-            </section>
+            <StackSection>
+              <Mysql />
+              <Express />
+              <ReactJs />
+              <Node />
+            </StackSection>
             <section>
               <h2>Ecosystem</h2>
               <ul>
