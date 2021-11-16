@@ -30,5 +30,8 @@ describe('<StackSection>', () => {
         <div>4</div>
       </StackSection>
     )
+
+    const li = component.getAllByRole('listitem')
+    expect(li).toHaveLength(4)
   })
 })

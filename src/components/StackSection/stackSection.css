@@ -19,11 +19,13 @@
 }
 
 
-.stack-list > li {
+.stack-item {
     list-style-type: none;
-    max-width: 100px;
+    width: max(60px, 8vw);
+    height: auto;
 }
 
-.stack-list > li > * {
-    max-width: 100%;
+.stack-item > * {
+    width: 100%;
+    height: 100%;
 }

@@ -24,7 +24,7 @@
       --fluid-screen: calc(var(--fluid-max-width) * 1px);
     }
   }
-  
+  /* Typography variables */
   :root {
     --f--1-min: 11.67;
     --f--1-max: 15.00;
@@ -68,11 +68,11 @@
         var(--fluid-bp)
     );
   }
-
+  /* Typography rename */
   :root {
     --typography-standard: var(--typography-step-0);
     --typography-small: var(--typography-step--1);
     --typography-large: var(--typography-step-2);
     --typography-xlarge: var(--typography-step-4);
   }
-  
+
