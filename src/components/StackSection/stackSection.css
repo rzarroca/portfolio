@@ -6,6 +6,7 @@
 
 .stack-description {
     font-size: var(--typography-large);
+    text-transform: capitalize;
 }
 
 .stack-list {
@@ -21,7 +22,7 @@
 
 .stack-item {
     list-style-type: none;
-    width: max(60px, 8vw);
+    width: max(60px, 6vw);
     height: auto;
 }
 

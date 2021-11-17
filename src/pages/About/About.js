@@ -6,6 +6,13 @@ import { ReactComponent as Mysql } from 'assets/svg/mysql.svg'
 import { ReactComponent as Express } from 'assets/svg/express.svg'
 import { ReactComponent as ReactJs } from 'assets/svg/react.svg'
 import { ReactComponent as Node } from 'assets/svg/node.svg'
+import { ReactComponent as Jest } from 'assets/svg/jest.svg'
+import { ReactComponent as Webpack } from 'assets/svg/webpack.svg'
+import { ReactComponent as Figma } from 'assets/svg/figma.svg'
+import { ReactComponent as Mongo } from 'assets/svg/mongodb.svg'
+import { ReactComponent as Redux } from 'assets/svg/redux.svg'
+import { ReactComponent as GraphQL } from 'assets/svg/graphql.svg'
+import testingLibrary from 'assets/images/react-tl.png'
 
 export function About () {
   return (
@@ -20,30 +27,24 @@ export function About () {
         <article className='card'>
           <h1>Stacks</h1>
           <div className='flexBox'>
-            <StackSection>
+            <StackSection title='core'>
               <Mysql />
               <Express />
               <ReactJs />
               <Node />
             </StackSection>
-            <section>
-              <h2>Ecosystem</h2>
-              <ul>
-                <li>Jest</li>
-                <li>React testing library</li>
-                <li>Webpack</li>
-                <li>Figma</li>
-                <li>Scrum</li>
-              </ul>
-            </section>
-            <section>
-              <h2>Learning</h2>
-              <ul>
-                <li>MongoDb</li>
-                <li>Redux</li>
-                <li>GraphQL</li>
-              </ul>
-            </section>
+            <StackSection title='ecosystem'>
+              <Jest />
+              <Webpack />
+              <img src={testingLibrary} alt='react testing library' />
+              <Figma />
+              Scrum
+            </StackSection>
+            <StackSection title='learning'>
+              <Mongo />
+              <Redux />
+              <GraphQL />
+            </StackSection>
           </div>
         </article>
       </div>
