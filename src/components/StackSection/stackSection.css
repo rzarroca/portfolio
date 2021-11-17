@@ -1,19 +1,20 @@
 .stack {
     display: flex;
     flex-flow: column nowrap;
-    gap: 0.5vh;
+    gap: max(1vh, 1vw);
 }
 
 .stack-description {
     font-size: var(--typography-large);
     text-transform: capitalize;
+    text-align: center;
 }
 
 .stack-list {
     display: flex;
     flex-flow: row wrap;
     row-gap: 2vh;
-    column-gap: 5vw;
+    column-gap: 8vw;
 
     justify-content: center;
     align-items: center;
@@ -22,7 +23,7 @@
 
 .stack-item {
     list-style-type: none;
-    width: max(60px, 6vw);
+    width: clamp(50px, 4vw, 80px);
     height: auto;
 }
 

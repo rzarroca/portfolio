@@ -24,9 +24,9 @@ export function About () {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis impedit natus nihil debitis, hic inventore labore dolore reiciendis placeat vitae ipsum odio iusto esse quae sit perferendis dolorum consequatur? Ullam.
           </p>
         </article>
-        <article className='card'>
+        <article className='card aboutStructure-enlarge'>
           <h1>Stacks</h1>
-          <div className='flexBox'>
+          <div className='stacksFlex'>
             <StackSection title='core'>
               <Mysql />
               <Express />
@@ -38,7 +38,7 @@ export function About () {
               <Webpack />
               <img src={testingLibrary} alt='react testing library' />
               <Figma />
-              Scrum
+              <p>SCRUM</p>
             </StackSection>
             <StackSection title='learning'>
               <Mongo />
