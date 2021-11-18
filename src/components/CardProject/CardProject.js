@@ -1,4 +1,5 @@
 import './cardProject.css'
+import { useState } from 'react'
 import { ImageWithFallback } from 'components/ImageWithFallback/ImageWithFallback'
 
 export function CardProject ({
@@ -8,15 +9,21 @@ export function CardProject ({
   alt = 'project image',
   children
 }) {
+  let [showLinks, setShowLinks] = useState(false)
+
+  function getVisibility (boolean) {
+    return boolean ? 'cardProject-information--visible' : ''
+  }
+
   return (
-    <article className='cardProject'>
+    <article className='cardProject' onClick={() => setShowLinks(state => !state)}>
       <header className='cardProject-header'>
         <h1 className='cardProject-title'>{title}</h1>
         <p className='cardProject-description'>{description}</p>
       </header>
       <figure className='cardProject-content'>
         <ImageWithFallback image={image} alt={alt} className='cardProject-image' />
-        <figcaption className='cardProject-information'>{children}</figcaption>
+        <figcaption className={`cardProject-information ${getVisibility(showLinks)}`}>{children}</figcaption>
       </figure>
     </article>
   )
