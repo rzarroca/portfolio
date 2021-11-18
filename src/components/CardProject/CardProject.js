@@ -6,18 +6,17 @@ export function CardProject ({
   description = 'Project description',
   image,
   alt = 'project image',
-  children,
-  ...props
+  children
 }) {
   return (
-    <article {...props}>
-      <header>
-        <h1>{title}</h1>
-        <p>{description}</p>
+    <article className='cardProject'>
+      <header className='cardProject-header'>
+        <h1 className='cardProject-title'>{title}</h1>
+        <p className='cardProject-description'>{description}</p>
       </header>
-      <figure>
-        <ImageWithFallback image={image} alt={alt} fallbackColor='highlight' />
-        <figcaption>{children}</figcaption>
+      <figure className='cardProject-content'>
+        <ImageWithFallback image={image} alt={alt} className='cardProject-image' />
+        <figcaption className='cardProject-information'>{children}</figcaption>
       </figure>
     </article>
   )
