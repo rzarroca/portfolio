@@ -23,7 +23,10 @@ export function CardProject ({
       </header>
       <figure className='cardProject-content'>
         <ImageWithFallback image={image} alt={alt} className='cardProject-image' />
-        <figcaption className={`cardProject-information ${getVisibility(showLinks)}`}>{children}</figcaption>
+        <figcaption className={`cardProject-information ${getVisibility(showLinks)}`}>{
+          showLinks ? children : null
+        }
+        </figcaption>
       </figure>
     </article>
   )

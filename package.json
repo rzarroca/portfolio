@@ -26,7 +26,10 @@
       "react-app",
       "react-app/jest",
       "./node_modules/standard/eslintrc.json"
-    ]
+    ],
+    "rules": {
+      "prefer-const": "off"
+    }
   },
   "browserslist": {
     "production": [
