@@ -7,5 +7,17 @@
     overflow: hidden;
 }
 
+.project-title {
+  color: var(--color-clear);
+  flex: 1 1 1000px;
+  text-align: center;
+}
+
 .project-section {
+  display: flex;
+
+  flex-flow: row wrap;
+  justify-content: space-around;
+  row-gap: 2vh;  
+
 }

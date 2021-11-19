@@ -13,7 +13,7 @@ export function Projects () {
     <FullPage background='primary' extend>
       <div className='project'>
         <section className='project-section'>
-          <h1>Last Projects</h1>
+          <h1 className='project-title'>Last Projects</h1>
 
           <CardProject
             title='cowork project'
@@ -40,15 +40,17 @@ export function Projects () {
           </CardProject>
         </section>
 
-        <section>
-          <h1>Other Projects</h1>
-          <ol>
-            <li><a href='#'>Project</a></li>
-            <li><a href='#'>Project</a></li>
-            <li><a href='#'>Project</a></li>
-            <li><a href='#'>Project</a></li>
-            <li><a href='#'>Project</a></li>
-          </ol>
+        <section className='project-section'>
+          <h1 className='project-title'>Other Projects</h1>
+          <nav>
+            <ul>
+              <li><a href='#'>Project</a></li>
+              <li><a href='#'>Project</a></li>
+              <li><a href='#'>Project</a></li>
+              <li><a href='#'>Project</a></li>
+              <li><a href='#'>Project</a></li>
+            </ul>
+          </nav>
         </section>
       </div>
     </FullPage>
