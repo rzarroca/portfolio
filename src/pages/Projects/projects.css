@@ -5,6 +5,8 @@
     flex-direction: column;
     gap: 5vw;
     overflow: hidden;
+    align-items: center;
+    padding-bottom: 2vh;
 }
 
 .project-title {
@@ -20,4 +22,8 @@
   justify-content: space-around;
   row-gap: 2vh;  
 
+}
+
+.smallLink {
+  font-size: var(--typography-small);
 }
