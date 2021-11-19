@@ -1,8 +1,11 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import './landing.css'
+
 import { FullPage } from 'components/FullPage/FullPage'
 import { Link } from 'components/Link/Link'
 import { Button } from 'components/Button/Button'
+import { Navlist } from 'components/NavList/NavList'
+
 import avatar from '../../assets/images/DSC04573.JPG'
 
 export function Landing () {
@@ -22,18 +25,11 @@ export function Landing () {
             This is one of the motivations that have driven me to enter the world of web development and technology, which offers <span>endless opportunities</span> to solve our needs and push us to a new level.
           </p>
         </article>
-        <article className='pagesLinks'>
-          <header className='pagesLinks-header'>
-            <h1>Please, have a look around!</h1>
-          </header>
-          <nav>
-            <ul className='pagesLinks-links'>
-              <li><Link>About me</Link></li>
-              <li><Link>Projects</Link></li>
-              <li><Button>Contact Me</Button></li>
-            </ul>
-          </nav>
-        </article>
+        <Navlist title='Please, have a look around!'>
+          <Link>About me</Link>
+          <Link>Projects</Link>
+          <Button>Contact Me</Button>
+        </Navlist>
       </div>
 
     </FullPage>
