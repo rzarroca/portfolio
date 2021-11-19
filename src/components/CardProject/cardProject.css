@@ -24,6 +24,7 @@
 .cardProject-content {
   background: linear-gradient(180deg, var(--color-clear) 0%, rgba(34, 40, 49, 0.25) 0.01%, rgba(34, 40, 49, 0.9) 59.9%);
   position: relative;
+  max-height: 340px;
 }
 
 .cardProject-image {

@@ -23,7 +23,7 @@ export function CardProject ({
       onMouseLeave={() => setShowLinks(false)}
     >
       <header className='cardProject-header'>
-        <h1 className='cardProject-title'>{title}</h1>
+        <h2 className='cardProject-title'>{title}</h2>
         <p className='cardProject-description'>{description}</p>
       </header>
       <figure className='cardProject-content'>
