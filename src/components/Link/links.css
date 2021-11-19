@@ -1,5 +1,4 @@
 .link {
-    color: var(--color-dark);
     text-decoration: none;
     outline: none;
     cursor: pointer;
@@ -8,8 +7,27 @@
     white-space: nowrap;
 }
 
+.link--smallText {
+    font-size: var(--typography-standard);
+}
+
+.link--clear{
+    color: var(--color-clear);
+}
+.link--primary{
+    color: var(--color-primary);
+}
+.link--secondary{
+    color: var(--color-secondary);
+}
+.link--highlight{
+    color: var(--color-highlight);
+}
+.link--dark{
+    color: var(--color-dark);
+}
+
 .link:hover {
-    color:var(--color-primary);
     outline: none;
     transition: 0.5s
 }
