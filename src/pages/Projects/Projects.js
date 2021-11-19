@@ -4,7 +4,9 @@ import { FullPage } from 'components/FullPage/FullPage'
 import { CardProject } from 'components/CardProject/CardProject'
 import { CardProjectLinks } from 'components/CardProjectLinks/CardProjectLinks'
 
-import WebApp from 'assets/images/webApp.jpg'
+import WebAppImg from 'assets/images/webApp.jpg'
+import PortfolioImg from 'assets/images/portfolio.jpg'
+import CalculatorImg from 'assets/images/calculator.jpg'
 
 export function Projects () {
   return (
@@ -16,9 +18,25 @@ export function Projects () {
           <CardProject
             title='cowork project'
             description='fullstack web app'
-            image={WebApp}
+            image={WebAppImg}
           >
             <CardProjectLinks webUrl='https://freespot.rzarroca.net/' gitHubUrl='https://github.com/FreeSpot-Coworking-Search/Cowork-project' />
+          </CardProject>
+
+          <CardProject
+            title='portfolio'
+            description='react web page'
+            image={PortfolioImg}
+          >
+            <CardProjectLinks gitHubUrl='https://github.com/rzarroca/portfolio' />
+          </CardProject>
+
+          <CardProject
+            title='calculator app'
+            description='vanilla js practise'
+            image={CalculatorImg}
+          >
+            <CardProjectLinks webUrl='https://rzarroca.github.io/calculator/' gitHubUrl='https://github.com/rzarroca/calculator' />
           </CardProject>
         </section>
 
