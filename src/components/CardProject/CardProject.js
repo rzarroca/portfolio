@@ -11,21 +11,29 @@ export function CardProject ({
 }) {
   let [showLinks, setShowLinks] = useState(false)
 
-  function getVisibility (boolean) {
+  function visibilityClass (boolean) {
     return boolean ? 'cardProject-information--visible' : ''
   }
 
   return (
-    <article className='cardProject' onClick={() => setShowLinks(state => !state)}>
+    <article
+      className='cardProject'
+      onClick={() => setShowLinks(state => !state)}
+      onMouseEnter={() => setShowLinks(true)}
+      onMouseLeave={() => setShowLinks(false)}
+    >
       <header className='cardProject-header'>
         <h1 className='cardProject-title'>{title}</h1>
         <p className='cardProject-description'>{description}</p>
       </header>
       <figure className='cardProject-content'>
         <ImageWithFallback image={image} alt={alt} className='cardProject-image' />
-        <figcaption className={`cardProject-information ${getVisibility(showLinks)}`}>{
-          showLinks ? children : null
-        }
+        <figcaption
+          className={`cardProject-information ${visibilityClass(showLinks)}`}
+        >
+          {
+            showLinks ? children : null
+            }
         </figcaption>
       </figure>
     </article>

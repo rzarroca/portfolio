@@ -1,10 +1,8 @@
 .cardProject {
-  max-width: 800px;
-  max-height: 500px;
-  height: clamp(250px, 40vw, 600px);
+  width: clamp(280px, 50vw, 650px);
+  height: clamp(250px, 40vw, 470px);
 
   display: grid;
-  grid-template-rows: minmax(0, 2fr) minmax(0, 5fr);
 }
 
 .cardProject-header {
