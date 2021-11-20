@@ -26,6 +26,5 @@
 
 .fullpage-extend{
     height: auto;
-    grid-template-rows: minmax(20px, 0.5fr) minmax(0, 1fr);
 }
 
