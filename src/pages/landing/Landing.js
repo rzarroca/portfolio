@@ -6,9 +6,13 @@ import { Link } from 'components/Link/Link'
 import { Button } from 'components/Button/Button'
 import { Navlist } from 'components/NavList/NavList'
 
+import { useDrawer } from 'hooks/useDrawer'
+
 import avatar from '../../assets/images/DSC04573.JPG'
 
 export function Landing () {
+  const toogleView = useDrawer()
+
   return (
     <FullPage background='clear'>
       <div className='landing'>
@@ -28,7 +32,7 @@ export function Landing () {
         <Navlist title='Please, have a look around!'>
           <Link>About me</Link>
           <Link>Projects</Link>
-          <Button>Contact Me</Button>
+          <Button onClick={() => toogleView()}>Contact Me</Button>
         </Navlist>
       </div>
 
