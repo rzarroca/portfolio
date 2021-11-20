@@ -16,7 +16,7 @@ import testingLibrary from 'assets/images/react-tl.png'
 
 export function About () {
   return (
-    <FullPage background='primary'>
+    <FullPage background='clear'>
       <div className='aboutStructure'>
         <article className='card'>
           <h1>About</h1>
@@ -35,8 +35,8 @@ export function About () {
             </StackSection>
             <StackSection title='ecosystem'>
               <Jest />
-              <Webpack />
               <img src={testingLibrary} alt='react testing library' />
+              <Webpack />
               <Figma />
               <p>SCRUM</p>
             </StackSection>

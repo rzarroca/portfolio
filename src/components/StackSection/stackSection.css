@@ -2,6 +2,8 @@
     display: flex;
     flex-flow: column nowrap;
     gap: max(1vh, 1vw);
+    background-color: var(--color-clear);
+    padding: 1vw;
 }
 
 .stack-description {
