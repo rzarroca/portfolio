@@ -1,8 +1,8 @@
 .button {
     outline: none;
     padding: 1vw 2vw;
-    color: var(--color-dark);
-    border: 2px solid var(--color-dark);
+    color: var(--color-clear);
+    border: 2px solid var(--color-clear);
     font-size: var(--typography-large);
     background: transparent;
     cursor: pointer;
@@ -15,7 +15,7 @@
 
 .button:hover{
     border-color: transparent;
-    color:var(--color-primary);
+    color:var(--color-highlight);
   }
   .button:before,
   .button:after {
@@ -32,20 +32,20 @@
      left: 0;
      border-bottom-color: transparent;
      border-right-color: transparent;
-     border-top-color: var(--color-primary);
-     border-left-color: var(--color-primary);
+     border-top-color: var(--color-highlight);
+     border-left-color: var(--color-highlight);
   }
   .button:after{
      bottom: 0;
      right: 0;
      border-top-color: transparent;
      border-left-color: transparent;
-     border-bottom-color: var(--color-primary);
-     border-right-color: var(--color-primary);
+     border-bottom-color: var(--color-highlight);
+     border-right-color: var(--color-highlight);
   }
   .button:hover:before,
   .button:hover:after {
-    border-color: var(--color-primary);
+    border-color: var(--color-highlight);
     height: 100%;
     width: 100%;
   }

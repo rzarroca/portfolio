@@ -7,6 +7,7 @@
     display: grid;
     grid-template-rows: minmax(0, 1.75fr) minmax(0, 1fr);
     gap: 5vw;
+    color: var(--color-clear);
 }
 
 .summary {
@@ -38,7 +39,7 @@
     align-self: center;
 
     grid-area: img;
-    box-shadow: 20px 0px 0px 8px var(--color-primary)
+    box-shadow: 20px 0px 0px 8px var(--color-dark)
 }
 
 @media (min-width: 760px) {

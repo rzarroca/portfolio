@@ -14,7 +14,7 @@ export function Landing () {
   const toogleView = useDrawer()
 
   return (
-    <FullPage background='clear'>
+    <FullPage background='primary'>
       <div className='landing'>
         <article className='summary'>
           <header>

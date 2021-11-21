@@ -1,8 +1,11 @@
 .cardProject {
   width: clamp(280px, 50vw, 650px);
   height: clamp(250px, 40vw, 470px);
+  border-radius: 4px;
 
   display: grid;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px 1px var(--color-dark);
 }
 
 .cardProject-header {
@@ -24,7 +27,8 @@
 .cardProject-content {
   background: linear-gradient(180deg, var(--color-clear) 0%, rgba(34, 40, 49, 0.25) 0.01%, rgba(34, 40, 49, 0.9) 59.9%);
   position: relative;
-  max-height: 340px;
+  max-height: 100%;
+  border-radius: 0 0 4px 4px;
 }
 
 .cardProject-image {
@@ -32,6 +36,7 @@
   height: 100%;
   object-fit: fill;
   z-index: 1;
+  border-radius: 0 0 4px 4px;
 }
 
 .cardProject-information {
@@ -43,6 +48,7 @@
   z-index: 0;
   opacity: 0;
   transition: all 0.3s ease;
+  border-radius: 0 0 4px 4px;
 
 }
 

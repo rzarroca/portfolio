@@ -27,7 +27,7 @@ export function Projects () {
 
           <CardProject
             title='portfolio'
-            description='react web page'
+            description='react + Material UI web page'
             image={PortfolioImg}
           >
             <CardProjectLinks gitHubUrl='https://github.com/rzarroca/portfolio' />
