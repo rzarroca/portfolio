@@ -5,5 +5,9 @@
   box-decoration-break: clone;
   margin: 0;
   border-radius: 7.5px;
-  text-shadow: -12px 12px 9.8px rgba(232, 192, 132, 0.7), 21px -18.1px 7.3px var(--color-primary), -18.1px -27.3px 30px var(--color-primary);
+  text-shadow: -12px 12px 9.8px rgba(232, 192, 132, 0.7), 21px -8.1px 7.3px var(--color-primary), -18.1px -27.3px 30px var(--color-primary);
+}
+
+.highligthText-clearBackground {
+  text-shadow: -12px 12px 9.8px rgba(232, 192, 132, 0.7), 21px -8.1px 7.3px var(--color-clear), -18.1px -27.3px 30px var(--color-primary);
 }

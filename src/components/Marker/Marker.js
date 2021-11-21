@@ -1,8 +1,8 @@
 import './marker.css'
 
-export function Marker ({ children }) {
+export function Marker ({ children, className }) {
   return (
-    <mark className='highligthText'>
+    <mark className={`highligthText ${className}`}>
       {children}
     </mark>
   )
