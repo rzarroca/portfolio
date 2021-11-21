@@ -39,7 +39,7 @@
     align-self: center;
 
     grid-area: img;
-    box-shadow: 20px 0px 0px 8px var(--color-dark)
+    box-shadow: 20px 1px 10px 0px var(--color-highlight)
 }
 
 @media (min-width: 760px) {

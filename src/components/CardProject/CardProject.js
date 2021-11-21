@@ -1,6 +1,7 @@
 import './cardProject.css'
 import { useState } from 'react'
 import { ImageWithFallback } from 'components/ImageWithFallback/ImageWithFallback'
+import { Marker } from 'components/Marker/Marker'
 
 export function CardProject ({
   title = 'Project name',
@@ -24,7 +25,7 @@ export function CardProject ({
     >
       <header className='cardProject-header'>
         <h2 className='cardProject-title'>{title}</h2>
-        <p className='cardProject-description'>{description}</p>
+        <p className='cardProject-description'><Marker className='highligthText-clearBackground'>{description}</Marker></p>
       </header>
       <figure className='cardProject-content'>
         <ImageWithFallback image={image} alt={alt} className='cardProject-image' />
