@@ -1,0 +1,21 @@
+.linkList-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  align-items:flex-end;
+  
+  list-style-type: none;
+}
+
+.linkList-item {
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+
+  font-size: var(--typography-standard);
+  color: var(--color-dark);
+}
+
+.linkList-item--reversed {
+  flex-direction: row-reverse;
+}
