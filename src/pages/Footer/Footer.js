@@ -1,6 +1,7 @@
 import './footer.css'
 
 import { LinkList } from 'components/LinkList/LinkList'
+import { Marker } from 'components/Marker/Marker'
 
 import { ReactComponent as Mail } from 'assets/svg/mail.svg'
 import { ReactComponent as Phone } from 'assets/svg/phone.svg'
@@ -38,7 +39,7 @@ export function Footer () {
     <footer className='footer'>
       <LinkList list={contactLinks} color='clear' className='footer-list' reverse />
       <p className='footer-text'>This page does not store your data nor use cookies.</p>
-      <p className='footer-text'>Copyright © 2021 • by rzarroca •</p>
+      <p className='footer-text'>Copyright © 2021 <Marker>• by rzarroca •</Marker></p>
     </footer>
   )
 }
