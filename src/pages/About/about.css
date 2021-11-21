@@ -5,7 +5,7 @@
 
     display: flex;
     flex-direction: column;
-    gap: 5vw;
+    gap: 2vh;
     overflow: hidden;
 }
 
@@ -36,7 +36,7 @@
     flex-flow: wrap row;
     gap: 2px;
     background-color: rgba(34, 40, 49, 0.25);
-    overflow: hidden;
+    overflow: auto;
 }
  
 

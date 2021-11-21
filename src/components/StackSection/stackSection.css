@@ -25,7 +25,7 @@
 
 .stack-item {
     list-style-type: none;
-    width: clamp(50px, 4vw, 80px);
+    width: clamp(35px, 6vw, 80px);
     height: auto;
 }
 

@@ -13,7 +13,7 @@
 .sideLinks-list {
   display: flex;
   flex-direction: column;
-  gap: 0.5vh;
+  gap: 2vh;
   align-items:flex-end;
   
   list-style-type: none;

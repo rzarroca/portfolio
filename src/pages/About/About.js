@@ -1,6 +1,7 @@
 import './about.css'
 import { FullPage } from 'components/FullPage/FullPage'
 import { StackSection } from 'components/StackSection/StackSection'
+import { Marker } from 'components/Marker/Marker'
 
 import { ReactComponent as Mysql } from 'assets/svg/mysql.svg'
 import { ReactComponent as Express } from 'assets/svg/express.svg'
@@ -21,7 +22,12 @@ export function About () {
         <article className='card'>
           <h1>About</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis impedit natus nihil debitis, hic inventore labore dolore reiciendis placeat vitae ipsum odio iusto esse quae sit perferendis dolorum consequatur? Ullam.
+            I'm an electromechanical engineer and a <Marker className='highligthText-clearBackground'>brewer enthusiast!</Marker> that has <Marker className='highligthText-clearBackground'>pursue his passion at the IT & Developer world</Marker>.
+            Currently living at Las Palmas de Gran Canaria, Spain (pretty nice weather here..).
+          </p>
+          <p>
+            Passionate for <Marker className='highligthText-clearBackground'>fast pages</Marker>, animations and creating intuitive, <Marker className='highligthText-clearBackground'>dynamic user experiences</Marker>.
+            <Marker className='highligthText-clearBackground'>Web app constructions</Marker> for solve needs are my field, with a global understanding of its creation process.
           </p>
         </article>
         <article className='card aboutStructure-enlarge'>

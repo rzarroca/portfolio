@@ -7,7 +7,7 @@ export function StackSection ({ title, children, ...props }) {
       <h2 className='stack-description'>{title || 'Stack title'}</h2>
       <ul className='stack-list'>
 
-        {children?.map((element, i) => (
+        {children?.map(element => (
           <li key={uuid()} className='stack-item'>{element}</li>
         ))}
       </ul>
