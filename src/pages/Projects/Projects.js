@@ -74,10 +74,13 @@ export function LazyProject () {
 
     function onChange (entries) {
       const observedElement = entries[0]
+
       if (observedElement.isIntersecting) {
         setValue(true)
+        observer.disconnect()
       }
     }
+    return () => observer && observer.disconnect
   })
 
   return (
