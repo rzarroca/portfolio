@@ -8,7 +8,7 @@ import { ReactComponent as Phone } from 'assets/svg/phone.svg'
 import { ReactComponent as Linkedin } from 'assets/svg/linkedin.svg'
 import { ReactComponent as GitHub } from 'assets/svg/github.svg'
 
-export function Footer () {
+export default function Footer () {
   const contactLinks = [
     {
       type: 'link',

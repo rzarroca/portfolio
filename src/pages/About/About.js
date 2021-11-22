@@ -15,7 +15,7 @@ import { ReactComponent as Redux } from 'assets/svg/redux.svg'
 import { ReactComponent as GraphQL } from 'assets/svg/graphql.svg'
 import testingLibrary from 'assets/images/react-tl.png'
 
-export function About () {
+export default function About () {
   return (
     <FullPage background='clear'>
       <div className='aboutStructure'>

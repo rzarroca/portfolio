@@ -1,19 +1,29 @@
+import { lazy } from 'react'
+
 import { Landing } from 'pages/Landing/Landing'
-import { About } from 'pages/About/About'
-import { LazyProject } from './pages/Projects/Projects'
 import { Contact } from 'pages/Contact/Contact'
-import { Footer } from 'pages/Footer/Footer'
 
 import { DrawerProvider } from 'hooks/useDrawer'
+import LazyPage from 'components/LazyPage/LazyPage'
+
+const About = lazy(() => import('pages/About/About'))
+const Projects = lazy(() => import('pages/Projects/Projects'))
+const Footer = lazy(() => import('pages/Footer/Footer'))
 
 export function App () {
   return (
     <main>
       <DrawerProvider content={<Contact />}>
         <Landing />
-        <About />
-        <LazyProject />
-        <Footer />
+        <LazyPage>
+          <About />
+        </LazyPage>
+        <LazyPage>
+          <Projects />
+        </LazyPage>
+        <LazyPage>
+          <Footer />
+        </LazyPage>
       </DrawerProvider>
     </main>
   )
