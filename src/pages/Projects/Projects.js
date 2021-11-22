@@ -58,11 +58,19 @@ export function LazyProject () {
   const refElement = useRef()
 
   useEffect(() => {
-    const observer = new IntersectionObserver(onChange, {
-      rootMargin: '100px'
-    })
+    let observer
 
-    observer.observe(refElement.current)
+    Promise.resolve(
+      typeof IntersectionObserver !== 'undefined'
+        ? IntersectionObserver
+        : import('intersection-observer')
+    ).then(() => {
+      observer = new IntersectionObserver(onChange, {
+        rootMargin: '100px'
+      })
+
+      observer.observe(refElement.current)
+    })
 
     function onChange (entries) {
       const observedElement = entries[0]
