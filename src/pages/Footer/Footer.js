@@ -39,7 +39,7 @@ export function Footer () {
     <footer className='footer'>
       <LinkList list={contactLinks} color='clear' className='footer-list' reverse />
       <p className='footer-text'>This page does not store your data nor use cookies.</p>
-      <p className='footer-text'>Copyright © 2021 <Marker>• by rzarroca •</Marker></p>
+      <p className='footer-text'>Copyright © 2021 <Marker>by rzarroca</Marker></p>
     </footer>
   )
 }
