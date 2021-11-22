@@ -9,8 +9,9 @@ import { Link } from 'components/Link/Link'
 import WebAppImg from 'assets/images/webApp.jpg'
 import PortfolioImg from 'assets/images/portfolio.jpg'
 import CalculatorImg from 'assets/images/calculator.jpg'
+import { useEffect, useRef, useState } from 'react'
 
-export function Projects () {
+function Projects () {
   return (
     <FullPage background='primary' extend>
       <div className='project'>
@@ -52,10 +53,28 @@ export function Projects () {
   )
 }
 
-export function LazyProject ({ children }) {
+export function LazyProject () {
+  const [isNear, setValue] = useState(false)
+  const refElement = useRef()
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(onChange, {
+      rootMargin: '100px'
+    })
+
+    observer.observe(refElement.current)
+
+    function onChange (entries) {
+      const observedElement = entries[0]
+      if (observedElement.isIntersecting) {
+        setValue(true)
+      }
+    }
+  })
+
   return (
-    <div>
-      {children}
+    <div ref={refElement}>
+      {isNear ? <Projects /> : null}
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import { Landing } from 'pages/Landing/Landing'
 import { About } from 'pages/About/About'
-import { Projects } from './pages/Projects/Projects'
+import { LazyProject } from './pages/Projects/Projects'
 import { Contact } from 'pages/Contact/Contact'
 import { Footer } from 'pages/Footer/Footer'
 
@@ -12,7 +12,7 @@ export function App () {
       <DrawerProvider content={<Contact />}>
         <Landing />
         <About />
-        <Projects />
+        <LazyProject />
         <Footer />
       </DrawerProvider>
     </main>
