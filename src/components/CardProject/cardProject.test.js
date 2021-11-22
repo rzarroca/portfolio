@@ -47,9 +47,9 @@ describe('<CardProject> with content', () => {
     component.getByRole('img', { name: 'test alternative text' })
   })
 
-  test('show childrens must be hidden by default', () => {
+  /* test('show childrens must be hidden by default', () => {
     let h1 = component.getByText('test h1')
     let parent = h1.parentNode
     // expect(parent).not.toBeVisible()
-  })
+  }) */
 })
