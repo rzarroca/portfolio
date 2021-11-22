@@ -6,10 +6,11 @@ import { CardProjectLinks } from 'components/CardProjectLinks/CardProjectLinks'
 import { Navlist } from 'components/NavList/NavList'
 import { Link } from 'components/Link/Link'
 
+import { useNear } from 'hooks/useNear'
+
 import WebAppImg from 'assets/images/webApp.jpg'
 import PortfolioImg from 'assets/images/portfolio.jpg'
 import CalculatorImg from 'assets/images/calculator.jpg'
-import { useEffect, useRef, useState } from 'react'
 
 function Projects () {
   return (
@@ -54,35 +55,7 @@ function Projects () {
 }
 
 export function LazyProject () {
-  const [isNear, setValue] = useState(false)
-  const refElement = useRef()
-
-  useEffect(() => {
-    let observer
-
-    Promise.resolve(
-      typeof IntersectionObserver !== 'undefined'
-        ? IntersectionObserver
-        : import('intersection-observer')
-    ).then(() => {
-      observer = new IntersectionObserver(onChange, {
-        rootMargin: '100px'
-      })
-
-      observer.observe(refElement.current)
-    })
-
-    function onChange (entries) {
-      const observedElement = entries[0]
-
-      if (observedElement.isIntersecting) {
-        setValue(true)
-        observer.disconnect()
-      }
-    }
-    return () => observer && observer.disconnect
-  })
-
+  const { isNear, refElement } = useNear()
   return (
     <div ref={refElement}>
       {isNear ? <Projects /> : null}
