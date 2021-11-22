@@ -1,5 +1,4 @@
 import { createTheme } from '@mui/material/styles'
-import { green, purple } from '@mui/material/colors'
 
 function cssCustomProps () {
   const r = document.querySelector(':root')
@@ -10,10 +9,10 @@ function cssCustomProps () {
 const theme = createTheme({
   palette: {
     primary: {
-      main: purple[500]
+      main: '#30475E'
     },
     secondary: {
-      main: green[500]
+      main: '#E8C084'
     }
   },
   typography: {

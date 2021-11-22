@@ -6,6 +6,7 @@ export function useNear () {
 
   useEffect(() => {
     let observer
+    console.log(refElement.current)
 
     Promise.resolve(
       typeof IntersectionObserver !== 'undefined'
@@ -16,7 +17,7 @@ export function useNear () {
         rootMargin: '100px'
       })
 
-      observer.observe(refElement.current)
+      refElement.current && observer.observe(refElement.current)
     })
 
     function onChange (entries) {

@@ -1,0 +1,7 @@
+.lazyPage {
+  height: 100vh;
+  background-color: var(--color-dark);
+  
+  display: grid;
+  place-items: center;
+}
