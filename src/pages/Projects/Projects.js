@@ -51,3 +51,11 @@ export function Projects () {
     </FullPage>
   )
 }
+
+export function LazyProject ({ children }) {
+  return (
+    <div>
+      {children}
+    </div>
+  )
+}
