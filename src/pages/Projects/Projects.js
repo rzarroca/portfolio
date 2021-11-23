@@ -12,7 +12,7 @@ import CalculatorImg from 'assets/images/calculator.jpg'
 
 export default function Projects () {
   return (
-    <FullPage background='primary' extend>
+    <FullPage background='primary' extend id='projects'>
       <div className='project'>
         <section className='project-section'>
           <h1 className='project-title'>Last Projects</h1>

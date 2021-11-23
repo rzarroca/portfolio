@@ -31,8 +31,8 @@ export function Landing () {
           </p>
         </article>
         <Navlist title='Please, have a look around!'>
-          <Link>About me</Link>
-          <Link>Projects</Link>
+          <Link href='#about'>About me</Link>
+          <Link href='#projects'>Projects</Link>
           <Button onClick={() => toogleView()}>Contact Me</Button>
         </Navlist>
       </div>
