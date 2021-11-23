@@ -1,7 +1,7 @@
 {
   "name": "my_portfolio",
-  "homepage": "https://rzarroca.github.io/portfolio",
-  "version": "1.1.0",
+  "homepage": "https://rzarroca.net",
+  "version": "1.2.0",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.5.0",
