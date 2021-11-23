@@ -6,7 +6,7 @@ import CircularProgress from '@mui/material/CircularProgress'
 
 import { useNear } from 'hooks/useNear'
 
-export default function LazyPage ({ children }) {
+export default function LazyPage ({ children, id }) {
   const { isNear, refElement } = useNear()
   return (
     <>
@@ -14,7 +14,7 @@ export default function LazyPage ({ children }) {
         ? <Suspense fallback={<div className='lazyPage'><CircularProgress color='secondary' /></div>}>
           {children}
         </Suspense>
-        : <div ref={refElement} className='lazyPage' />}
+        : <div ref={refElement} className='lazyPage' id={id} />}
     </>
   )
 }

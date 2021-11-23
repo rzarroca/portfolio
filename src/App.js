@@ -15,10 +15,10 @@ export function App () {
     <main>
       <DrawerProvider content={<Contact />}>
         <Landing />
-        <LazyPage>
+        <LazyPage id='about'>
           <About />
         </LazyPage>
-        <LazyPage>
+        <LazyPage id='projects'>
           <Projects />
         </LazyPage>
         <LazyPage>
