@@ -27,7 +27,7 @@ export default function About () {
           </p>
           <p>
             Passionate for <Marker className='highligthText-clearBackground'>fast pages</Marker>, animations and creating intuitive, <Marker className='highligthText-clearBackground'>dynamic user experiences</Marker>.
-            Web app constructions for solve needs are my field, with a global understanding of its creation process.
+            My formation has gave me experience developing web apps, with a global understanding of its creation process.
           </p>
         </article>
         <article className='card aboutStructure-enlarge'>
