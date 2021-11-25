@@ -17,7 +17,7 @@ import testingLibrary from 'assets/images/react-tl.png'
 
 export default function About () {
   return (
-    <FullPage background='clear' id='about'>
+    <FullPage background='clear' extend id='about'>
       <div className='aboutStructure'>
         <article className='card'>
           <h1>About</h1>
