@@ -6,6 +6,7 @@
 
     display: grid;
     grid-template-rows: minmax(0, 1.75fr) minmax(0, 1fr);
+    padding: 0 5vw;
     gap: 5vw;
     color: var(--color-clear);
 }
